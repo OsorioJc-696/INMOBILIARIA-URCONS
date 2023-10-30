@@ -7,8 +7,7 @@ function mostrarOcultarMenu(){
         
     }else{
         document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-        
+        menuVisible = true
     }
 }
 
@@ -65,12 +64,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function getBotResponse(userMessage) {
     if (userMessage.includes("1")) {
-      return "Nuestro horario es: "
+      return "Nuestro horario es: \n"
       +"\nlun:	Abierto las 24 horas"
-      +"\nmar:	9:00 a. m. – 7:00 p. m."
-      +"\nmié:	9:00 a. m. – 7:00 p. m."
-      +"\njue:	9:00 a. m. – 7:00 p. m."
-      +"\nvie:	9:00 a. m. – 7:00 p. m."
+      +"\nmar a vie:	9:00 a. m. - 1:00 .p.m & 3:00 - 7:00 p. m."
       +"\nsáb:	9:00 a. m. – 1:00 p. m."
       +"\ndom:	Cerrado";
   } else if (userMessage.includes("2")) {
@@ -286,62 +282,6 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
   });
-
-//MOSTRAR SECCIONES
-// document.addEventListener("DOMContentLoaded", function () {
-//   const sections = document.querySelectorAll("section");
-//   let autoScroll = true;
-//   let scrollDelay = 10000; // 4 segundos
-//   let stopScrollTimeout = null;
-
-//   function scrollToNextSection() {
-//       if (autoScroll) {
-//           let currentSection = document.querySelector(".active");
-//           let nextSection = currentSection.nextElementSibling;
-
-//           if (!nextSection) {
-//               nextSection = sections[0];
-//           }
-
-//           currentSection.classList.remove("active");
-//           nextSection.classList.add("active");
-
-//           let scrollTo = nextSection.offsetTop - 80; // 80px de compensación hacia abajo
-//           window.scrollTo({
-//               top: scrollTo,
-//               behavior: "smooth"
-//           });
-
-//           stopScrollTimeout = setTimeout(function () {
-//               scrollToNextSection();
-//           }, scrollDelay);
-//       }
-//   }
-
-//   function pauseScrollOnMouseOver() {
-//       autoScroll = false;
-//       if (stopScrollTimeout) {
-//           clearTimeout(stopScrollTimeout);
-//       }
-//   }
-
-//   function resumeScrollOnMouseOut() {
-//       autoScroll = true;
-//       stopScrollTimeout = setTimeout(function () {
-//           scrollToNextSection();
-//       }, 12000); // 6 segundos
-//   }
-
-//   sections[0].classList.add("active");
-//   scrollToNextSection();
-
-//   sections.forEach((section) => {
-//       section.addEventListener("mouseover", pauseScrollOnMouseOver);
-//       section.addEventListener("mouseout", resumeScrollOnMouseOut);
-//   });
-// });
-
-
 
 
 //FORMULARIO DE CONTACTO
