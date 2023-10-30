@@ -17,7 +17,7 @@
             <div id="nav-logo" class="logo">
                 <img src="logo-02.png" alt="">
             </div>
-            <nav id="nav">            
+            <nav id="nav">
                 <ul>
                     <li>
                         <a href="#" onclick="mostrarSubpestañas(1, this)">INICIO <i class="fas fa-chevron-down"></i></a>
@@ -69,16 +69,16 @@
                     <img src="logo-01.jpeg">
                 </div>
                 <h1>INVERSIONES <span>URCONS</span></h1>
-                
+
                 <h2>Una Nueva Ciudad</h2>
 
             </div>
-            
+
     </section>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-               
+
         <div class="contenido-intro">
             <h1>Inversiones Urcons</h1>
             <p>
@@ -89,34 +89,34 @@
         </div>
 
         <div class="contenido-banner">
-            
+
             <div class="contenedor-img">
                 <img src="img-01.jpeg" alt="">
             </div>
-               
+
         </div>
-        
+
     </section>
 
     <div class="separador"></div>
     <!-- SECCION CONTACTO -->
     <section id="contactos" class="contactos">
-        
+
         <div class="contenido-seccion">
             <h2>CONTÁCTAME</h2>
             <div class="fila">
-             
+
                 <form id="info">
-                    
+
                     <!-- ... tus campos de formulario ... -->
                     <input type="text" id="nombre" placeholder="Tu Nombre">
                         <input type="tel" id="telefono" placeholder="Número de teléfono">
                         <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button type="button" onclick="enviarSMS()">Enviar SMS</button>
-                
+
                 </form>
                     <!-- Ventana emergente de agradecimiento -->
-                
+
             </div>
             <div class="popup" id="popup">
                 <p>Gracias por enviar tu SMS.</p>
@@ -135,13 +135,37 @@
                     </div>
                 </div>
             </div>
-        
+
     </section>
+
+    <!-- CHAT BOT -->
+    <div class="chatbot-container">
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <div class="chatbot-icon" id="chatbot-icon">
+                <img src="iconoChatBot.jpg" alt="Chatbot Icon">
+            </div>
+        </div>
+        <div class="chatbot" id="chatbot">
+            <div class="chat-header">
+                Chatbot
+                <button id="close-chatbot" class="close-chatbot"><i class="far fa-times-circle"></i></button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
 
 
     <!-- footer -->
     <footer>
-        
+
         <a href="index.html#portada" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
@@ -151,7 +175,7 @@
             <a href="https://instagram.com/urconseirl?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
             <a href="https://www.tiktok.com/@inversiones_urcons_?_t=8gozW13EU1l&_r=1"><i class="fab fa-tiktok"></i></a>
             <a href="https://wa.me/qr/5ZCX73KMRBQ2I1"><i class="fab fa-whatsapp"></i></a>
-    
+
         </div>
 </footer>
 
