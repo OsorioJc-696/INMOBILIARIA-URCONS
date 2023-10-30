@@ -76,6 +76,11 @@ html{
 .verMas{
    /* Agrega relleno interno de 20px para espaciar el contenido de la sección */
     background-color: #1CB698;
+    padding:  35px 15%;
+    /* background-color: #094ae1; */
+    background-image:  url(fondo01.jpg);
+    background-size:contain;
+
 }
 
 
@@ -95,8 +100,8 @@ html{
     text-align: center; 
     border: 1px solid #05cfee;
     border-radius: 15px;
-    padding: 4em; 
-    background-color: #094ae1;
+    padding: 35px ; 
+    background-color: #094ae184;
     box-shadow: 0 0 10px #05cfee, 2px 2px 12px #1CB698;
     transition: .5s;
     width: 100%;
@@ -105,28 +110,44 @@ html{
 .verMas #historial, #aval, #tienda {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     margin: 35px auto;
-    max-width: 980px; /* Ajusta el ancho máximo deseado */
+    max-width: 1200px; /* Ajusta el ancho máximo deseado */
 }
 
 .verMas .columnas {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas */
-    gap: 5px;
     width: 100%; /* Establece el ancho máximo de cada columna al 100% */
-  
 }
+
 .verMas .columnas p{
     text-align: justify;
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
+    padding: 8px;
+    margin: 8px;
+    font-size: 18px;
+        
+}
+.verMas .columnas2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas */
+    width: 100%; /* Establece el ancho máximo de cada columna al 100% */
+}
+.verMas img {
+    max-width: 400px;
+    height: auto;
+    margin-left: 30%;
+    border-radius: 1em;
+
+}
+.verMas .columnas2 p{
+    padding: 8px;
+    margin: 8px;
+    font-size: 18px;
         
 }
 .verMas h3 {
-   font-size: 38px;    
+   font-size: 38px;
+   color: #fff;   
  }
 
 
@@ -160,8 +181,29 @@ html{
     nav.responsive ul li a{
         
         font-size: 12px;
-    }}
+    }
+    .verMas .columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas */
+        width: 100%; /* Establece el ancho máximo de cada columna al 100% */
+    }
+    .verMas .columnas2 {
+        grid-template-columns: repeat(1, 1fr); /* Crea 3 columnas */
+       
+    }
+    .verMas img {
+       margin-left: 10%;
+       
+    }
+}
+
 @media screen and (max-width:700px) {
+    .verMas .columnas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Crea 3 columnas */
+        width: 100%; /* Establece el ancho máximo de cada columna al 100% */
+    }
+    
     
  } 
 

@@ -73,8 +73,10 @@ html{
 
 /* SECCION INFORMACIÓN */
 .blog{
-    margin-top: 110px;
-    background-color: #094ae1;
+    margin-top: 100px;
+    padding:  25px 15%;
+    /* background-color: #094ae1; */
+    background-image: url(fondo.jpg);
 
 }
 
@@ -97,12 +99,12 @@ html{
 
 .blog .aval, .historial, .tienda{
     text-align: center; 
-    border: 1px solid #05cfee;
+    border: 2px solid #1CB698;
     border-radius: 15px;
     padding: 4em; 
     border: 2px solid #0a1128;
-    background-color: #1CB698;
-    box-shadow: 0 0 10px #05cfee, 2px 2px 12px #0a1128;
+    background-color: #0637cacf;
+    box-shadow: 0 0 10px #0a1128, 2px 2px 12px #05cfee;
     transition: .5s;
     width: 100%;
 
@@ -168,12 +170,30 @@ html{
         
         font-size: 12px;
     }
+
+    .blog .columnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .blog .columna {
+        width: 100%;
+        float: left;
+    }
+    .blog .columna img {
+        
+        margin: 15px 0 ;
+        
+    }
+    
 }
 
 
 @media screen and (max-width:700px) {
     .blog .columna {
-        width: 100%
+        width: 100%;
     }
 
  } 
@@ -184,17 +204,17 @@ html{
 }
 
 .botonLeerMas {
-    background-color: #3498db; /* Color de fondo */
+    background-color: #21c798; /* Color de fondo */
     color: #fff; /* Color del texto */
     padding: 10px 20px; /* Espaciado interno */
-    border: 1px solid #0a1128; /* Sin borde */
+    border: 2px solid #0a1128; /* Sin borde */
     border-radius: 50px; /* Esquinas redondeadas */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
 }
 
 .botonLeerMas:hover {
     background-color: #0a1128; /* Cambia el color de fondo al pasar el cursor */
-    border: 1px solid #05cfee;
+    border: 2px solid #21c798;
 }
 
 
