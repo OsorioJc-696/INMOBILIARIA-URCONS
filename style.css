@@ -659,8 +659,6 @@ footer{
 }
 
 
- 
-
 @media screen and (max-width:700px){
     .portada .contenido-banner{
         padding: 20px;
@@ -742,5 +740,20 @@ footer{
         padding: 60px 0;
         
     }
+    /* CHAT BOT */
+.chatbot-container {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 300px; 
+}
+
+
+.chatbot-icon {
+    width: 100px;
+    height: 100px;
+    
+}
+
 
 }
