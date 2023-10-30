@@ -210,7 +210,7 @@ html{
     
 }
 .contactos .contenido-seccion{
-    max-width: 1000px;
+    max-width: auto;
     margin: auto;
     max-height: 100%;
 
@@ -224,14 +224,20 @@ html{
 }
 
 .contactos .fila{
-    display: flex;
+    display: flex; /* Usamos flexbox para crear una fila */
+    justify-content:center; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Las columnas se ajustan al ancho del contenedor */
+    margin: 0 6%; /* Centramos el contenido */
+    
 }
 
 .contactos .col{
-    width: 50%;
-    padding: 10px;
+    flex: 1; /* Las columnas se expanden para llenar el espacio */
+    padding: 10px; /* Espacio entre las columnas si lo deseas */
     margin: 25px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+
     
 }
 
@@ -240,8 +246,8 @@ html{
     padding-top: 0px;
     margin: 10% 0 0 0 ;
 }
-.contactos .col input, .contactos .col textarea{
-    display: block;
+.contactos .fila input, .contactos .fila textarea{
+    
     width: 100%;
     padding: 18px;
     border: none;
@@ -249,7 +255,11 @@ html{
     background-color: #252A2E;
     color: #fff;
     font-size: 18px;
+    display: inline-block; /* Hace que los campos se muestren en línea */
+    margin-right: 10px;
+    border-radius: 5px;
 }
+
 .contactos button{
     cursor: pointer;
     background-color: transparent;
@@ -263,6 +273,7 @@ html{
     position: relative;
     z-index: 10;
 }
+
 .contactos button .overlay{
     position: absolute;
     top: 0;
@@ -277,28 +288,14 @@ html{
     width: 100%;
 }
 .contactos .col img{
-    width: 100%;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:25px ;
+
 }
-.contactos .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contactos .col .info ul{
-    list-style: none;
-}
-.contactos .col .info ul li{
-    margin-bottom: 20px;
-}
-.contactos .col .info ul li i{
-    color: #1CB698;
-    display: inline-block;
-    margin-right: 20px;
-}
+
 .contactos .col h3{
     margin-top: 8px;
     text-align: center;
@@ -515,11 +512,22 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    background: #11035b;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    background: rgba(0, 0, 255, 0.441);
+    border: 2px solid #09ebb2;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+}
+.popup button{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 50%;
 }
 /* SECCION FOOTER */
 footer{

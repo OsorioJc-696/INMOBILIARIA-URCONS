@@ -111,32 +111,34 @@
 
                 <form id="info">
 
-                    <!-- ... tus campos de formulario ... -->
-                    <input type="text" id="nombre" placeholder="Tu Nombre">
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    
                         <input type="tel" id="telefono" placeholder="Número de teléfono">
+                    
                         <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    
                     <button type="button" onclick="enviarSMS()">Enviar SMS</button>
 
                 </form>
                     <!-- Ventana emergente de agradecimiento -->
-
             </div>
+
             <div class="popup" id="popup">
-                <p>Gracias por enviar tu SMS.</p>
-                <button onclick="cerrarPopup()">Cerrar</button>
+                <p>Gracias por enviar tu mensaje</p>
+                <button onclick="cerrarPopup()"><i class="fas fa-window-close"></i></button>
             </div>
                 <!-- Mapa -->
-                <div class="col">
-                    <div id="ubicacion">
-                        <a href="https://www.google.com/maps/place/Centro+Comercial+Cueto/@-12.0710804,-75.2125204,1496m/data=!3m1!1e3!4m14!1m7!3m6!1s0x910e9651ef28cf8d:0x7ad113d4d48a7dea!2sCentro+Comercial+Cueto!8m2!3d-12.072385!4d-75.2081673!16s%2Fg%2F11bc7r_x_8!3m5!1s0x910e9651ef28cf8d:0x7ad113d4d48a7dea!8m2!3d-12.072385!4d-75.2081673!16s%2Fg%2F11bc7r_x_8?entry=ttuo">
-                            <img src="ubicacion.png" alt="">
-                        </a>
-                        <h3>
-                            <i class="fas fa-map-marker-alt"></i> Calle Real 959, Huancayo 12003
-                        </h3>
-                        <h4>Oficina 302 tercer piso</h4>
-                    </div>
+            <div class="col">
+                <div id="ubicacion">
+                    <a href="https://www.google.com/maps/place/Centro+Comercial+Cueto/@-12.0710804,-75.2125204,1496m/data=!3m1!1e3!4m14!1m7!3m6!1s0x910e9651ef28cf8d:0x7ad113d4d48a7dea!2sCentro+Comercial+Cueto!8m2!3d-12.072385!4d-75.2081673!16s%2Fg%2F11bc7r_x_8!3m5!1s0x910e9651ef28cf8d:0x7ad113d4d48a7dea!8m2!3d-12.072385!4d-75.2081673!16s%2Fg%2F11bc7r_x_8?entry=ttuo">
+                        <img src="ubicacion.png" alt="">
+                    </a>
+                    <h3>
+                        <i class="fas fa-map-marker-alt"></i> Calle Real 959, Huancayo 12003
+                    </h3>
+                    <h4>Oficina 302 tercer piso</h4>
                 </div>
+            </div>
             </div>
 
     </section>

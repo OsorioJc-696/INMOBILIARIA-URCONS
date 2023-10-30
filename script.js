@@ -120,12 +120,6 @@ sendButton.addEventListener("click", function () {
 });
 
 
-
-
-
-
-
-
 //MOSTRAR SUBPESTAÑAS 
 function mostrarSubpestañas(numero, enlace) {
   var subpestaña = document.getElementById("subpestañas" + numero);
@@ -295,6 +289,18 @@ function enviarSMS() {
 function cerrarPopup() {
   // Cierra la ventana emergente de agradecimiento
   document.getElementById('popup').style.display = 'none';
+}
+
+function enviarSMS() {
+  // Realiza aquí las acciones necesarias para enviar el SMS
+
+  // Limpia los campos del formulario
+  document.getElementById("nombre").value = "";
+  document.getElementById("telefono").value = "";
+  document.getElementById("mensaje").value = "";
+
+  // Puedes mostrar una ventana emergente de agradecimiento aquí si lo deseas
+  document.getElementById('popup').style.display = 'block';
 }
 
 // CARRUSEL
