@@ -743,8 +743,8 @@ footer{
     /* CHAT BOT */
 .chatbot-container {
     position: fixed;
-    bottom: 60px;
-    right: 20px;
+    bottom: 100px;
+    right: 15px;
     width: 300px; 
 }
 
