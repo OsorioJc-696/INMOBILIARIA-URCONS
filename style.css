@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0 ;
+    padding: 0 ;
+}
+
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background: #060606;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+    justify-content:space-between;
+    display: flex;
+}
+.contenedor-header header{
+    max-width: auto;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;  
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style:none;
+}
+.contenedor-header header ul li{
+    text-align: center;
+}
+
+.contenedor-header header nav ul li a{
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #50D9FF;
+    font-weight: bold;
+}
+.nav-responsive{
+    background-color: #50D9FF;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;    
+}
+.nav-responsive:hover{
+    background-color: #1CB698;
+    color: #fff;
+    transition: .5s;
+}
+
+/* SECCION PORTADA */
+.portada{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(15, 41, 56)),
+    url(inmoviliaria-01.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.portada .particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.portada .contenido-banner{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: transparent;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top:13em;
+    border-radius: 5%;
+}
+.portada .contenido-banner :hover {
+    background-color: transparent; /* Nuevo color de fondo al hacer hover */
+    color: #032c7c; /* Nuevo color del texto al hacer hover */
+    transform: scale(1.05); /* Escala el contenido al 105% del tamaño original */
+    transition: transform 0.5s ease-in-out; /* Transición del efecto anterior */
+}
+.portada .contenido-banner h1 :hover {
+    color: #1CB698;
+}
+.portada .contenido-banner img{
+    margin-top: 40px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.portada .contenido-banner:hover img {
+    border: 10px solid #fff;
+    transform: scale(1.05); /* Escala el contenido al 105% del tamaño original */
+    transition: transform 0.3s ease-in-out;
+}
+
+.portada .contenido-banner h1{
+    margin-top: 20px;
+    font-size: 70px;
+    font-family: 'Righteous';
+}
+
+.portada .contenido-banner h1:hover {
+    transition: color 0.3s ease-in-out;
+}
+
+.portada .contenido-banner h2:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+.portada .contenido-banner h2{
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+}
+
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(to top, #032c7c, #1CB698),
+    url(img-01.jpeg);
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    padding: 5px 35px;
+    text-align: center;
+    
+}
+
+.inicio .contenido-banner{
+    padding: 20px;
+    max-width: 600px;
+    margin:auto;
+    text-align: center;
+    display: inline-block;
+    border-radius: 40px;
+
+}
+.inicio .contenido-banner img{
+    
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.inicio .contenido-intro{
+    padding: 20px;
+    color: #000;
+    margin: 2%;
+    margin-right: 10%;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-intro h1{
+    color: #032c7c;
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-intro p{
+    font-size: 15px;
+    font-weight:normal;
+    padding: 3%;
+}
+
+/* SECCION CONTACTOS */
+
+.contactos{
+    background-image: url(contact.png);
+    background-color: #032c7c;
+    color: #fff;
+    padding: 50px 0;
+    
+}
+.contactos .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    max-height: 100%;
+
+}
+
+.contactos h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contactos .fila{
+    display: flex;
+}
+
+.contactos .col{
+    width: 50%;
+    padding: 10px;
+    margin: 25px;
+    position: relative;
+    
+}
+
+.contactos img{
+    border-radius: 50px;
+    padding-top: 0px;
+    margin: 10% 0 0 0 ;
+}
+.contactos .col input, .contactos .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contactos button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 0px auto;
+    padding: 0px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contactos button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698 ;
+    z-index: -1;
+    transition: 1s;
+}
+.contactos button:hover .overlay{
+    width: 100%;
+}
+.contactos .col img{
+    width: 100%;
+}
+.contactos .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contactos .col .info ul{
+    list-style: none;
+}
+.contactos .col .info ul li{
+    margin-bottom: 20px;
+}
+.contactos .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+.contactos .col h3{
+    margin-top: 8px;
+    text-align: center;
+}
+.contactos .col h4{
+    margin-top: 8px;
+    text-align: center;
+    color: #0c0c0d;
+
+}
+
+
+/* SOBRE MI */
+.sobremi{
+    margin-top: 100px;
+    
+}
+.sobremi .contenido-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(15, 41, 56)),
+    url(inmoviliaria-03.jpeg);
+    background-size: cover;
+    height:100%;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.sobremi .contenido-seccion .fila {
+    
+    flex-basis: 50%; /* Para que ocupe el 50% del ancho en una fila de dos columnas */
+    padding: 50px;
+    text-align: justify;
+}
+
+.sobremi .contenido-seccion .col {
+    flex-basis: 50%; /* Para que ocupe el 50% del ancho en una fila de dos columnas */
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* SECCION MISION Y VISION */
+
+.MisionVision .contenido-seccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(15, 41, 56)),
+    url(inmoviliaria-03.jpeg);
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.MisionVision .contenido-seccion .fila {
+    text-align: center;
+    flex-basis: 50%; /* Para que ocupe el 50% del ancho en una fila de dos columnas */
+    padding: 90px;
+    text-align: justify;
+    width: 50%;
+    
+}
+.MisionVision .contenido-seccion .fila h1{
+    
+    text-align: center;
+}
+.MisionVision .contenido-seccion  img{
+    padding: 0 30%;
+}
+.MisionVision .contenido-seccion .col {
+    flex-basis: 50%; /* Para que ocupe el 50% del ancho en una fila de dos columnas */
+    padding: 80px;
+    text-align: justify;
+    width: 50%;
+}
+.MisionVision .contenido-seccion .col h1{
+    
+    text-align: center;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #11035b;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+/* SECCION FOOTER */
+footer{
+    display: flex;
+     background-color: #21c798;
+     color: #fff;
+     padding: 50px 0 30px 0;
+     text-align: center;
+     position: relative;
+     width: 100%;
+     justify-content: center;
+     padding: 20px 50px;
+     height: 100%;
+     flex-direction: column;
+ }
+ 
+ footer .wave#wave1 {
+     z-index: 1000;
+     opacity: 1;
+     bottom: 0;
+     animation: animateWave 4s linear infinite;
+ }
+ 
+ footer .redes{
+     margin-bottom: 20px;
+ }
+ footer .redes a{
+     color: #fff;
+     display: inline-block;
+     text-decoration: none;
+     border: 1px solid #fff;
+     border-radius: 100%;
+     width: 42px;
+     height: 42px;
+     line-height: 42px;
+     margin: 40px 5px;
+     font-size: 20px;
+     transition: .3s;
+ }
+ 
+ footer .arriba{
+     display: block;
+     width: 50px;
+     height: 50px;
+     background-color: #1CB698;
+     color: #fff;
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     top: -25px;
+     border-radius: 50%;
+     line-height: 50px;
+     font-size: 18px;
+ }
+
+ 
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        text-align: center;
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    nav.responsive ul li a{
+        font-size: 12px;
+    }
+
+    .portada .contenido-banner{
+        
+        margin: 10em auto 0 auto;
+        
+    }
+    .portada .contenido-banner h1{
+        font-size: 50px;
+    }
+
+    .inicio{
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .inicio .contenido-banner{
+        margin:auto;
+
+    }
+    .inicio .contenido-banner img{
+        
+        width: 120%;
+        margin-left: -3em;
+    }
+    .inicio .contenido-intro {
+        margin-right: auto;
+        margin-top: 0;
+    }
+    
+}
+
+
+ 
+
+@media screen and (max-width:700px){
+    .portada .contenido-banner{
+        padding: 20px;
+        max-width: 370px;
+        margin: 11em auto 0 auto;
+        border-radius: 5%;
+    }
+    .portada .contenido-banner h1{
+        font-size: 50px;
+    }
+
+    /* INICIO */
+    .inicio{
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2px 0;
+    margin: 0px;
+    }
+    
+    .inicio .contenido-banner{
+        
+        padding: 10px 0;
+        margin-top: 5px ;
+        max-width: 300px;
+       
+    }
+    .inicio .contenido-banner img {
+        
+        width: min(200%,400px);
+        height: auto;
+        margin-left: -3em;
+        margin-bottom: 0px;
+    }
+
+    .inicio .contenido-intro {
+        margin-right: auto;
+        margin-top: 0;
+        margin: 0px;
+        font-size: 13px;
+    }
+    .inicio .contenido-intro h1{
+        margin-top: 2px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+    
+
+    
+    /* CONTACTO */
+    .contactos .fila{
+        display: block;
+    }
+    .contactos .fila .col{
+        width: 90%;
+    }
+    .contactos .col img{
+        width: 90%;
+        margin: 0;
+    }
+
+    .contenido-seccion {
+        flex-direction: column;
+    }
+    
+    .fila, .col {
+        flex-basis: 100%; /* Cambiar a ancho completo en una sola columna */
+    }
+}

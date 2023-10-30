@@ -1,0 +1,17 @@
+
+
+
+.carrusel-container {
+    width: 300px; /* Ancho deseado del carrusel */
+    overflow: hidden; /* Oculta el contenido que excede el ancho */
+}
+
+.carrusel-slide {
+    display: flex; /* Hace que los elementos internos se muestren en línea horizontalmente */
+    transition: transform 0.5s; /* Agrega una animación suave al cambio de diapositivas */
+}
+
+.carrusel-item {
+    width: 300px; /* Ancho de cada diapositiva */
+}
+

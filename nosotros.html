@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVERSIONES URCONS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="iconox.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contenedor-header">
+        <header>
+            <div id="nav-logo" class="logo">
+                <img src="logo-02.png" alt="">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(1, this)">INICIO <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas1" style="display: none">
+                            <li><a href="index.html#portada" onclick="seleccionarSubpestaña(1, 1)">Portada</a></li>
+                            <li><a href="index.html#inicio" onclick="seleccionarSubpestaña(1, 2)">Urcons</a></li>
+                            <li><a href="index.html#contacto" onclick="seleccionarSubpestaña(1, 3)">Contáctame</a></li>
+                            <!-- Agrega más subpestañas si es necesario -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(2, this)">NOSOTROS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas2" style="display: none">
+                            <li><a href="nosotros.html#nosotros" onclick="seleccionarSubpestaña(2, 4)">Extra</a></li>
+                            <li><a href="nosotros.html#MisionVision" onclick="seleccionarSubpestaña(2, 5)">Misión / Visión</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(3, this)">BLOG <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas3" style="display: none">
+                            <li><a href="blog.html#historial" onclick="seleccionarSubpestaña(3, 6)">Historial Crediticio</a></li>
+                            <li><a href="blog.html#aval" onclick="seleccionarSubpestaña(3, 7)">Aval Hipotecario</a></li>
+                            <li><a href="blog.html#tienda" onclick="seleccionarSubpestaña(3, 8)">Crédito MIvivienda</a></li>
+                            <!-- Agrega más subpestañas si es necesario -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(4, this)">MÁS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas4" style="display: none">
+                            <li><a href="verMas.html#historial" onclick="seleccionarSubpestaña(4, 9)">Historial Crediticio</a></li>
+                            <li><a href="verMas.html#aval" onclick="seleccionarSubpestaña(4, 10)">Aval hipotecario</a></li>
+                            <li><a href="verMas.html#tienda" onclick="seleccionarSubpestaña(4, 11)">Garante hipotecario</a></li>
+                            <!-- Agrega más subpestañas si es necesario -->
+                        </ul>
+                    </li>
+                </ul>
+
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </section>
+
+    <!-- SECCION NOSOTROS -->
+<section id="nosotros" class="nosotros">
+
+    <div id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <h1>SOBRE NOSOTROS</h1>
+                <br><br>Nuestra empresa surgió gracias a la pasión que tenemos por ayudarle a las personas a construir, arreglar, reparar y crear lo que necesiten de una forma fácil y eficiente. En Inversiones Urcons ofrecemos a nuestros clientes los productos de la más alta calidad, los mejores suministros del mercado y un excelente servicio al cliente en todas las etapas del proceso de compra y entrega.
+
+                <br><br>Estamos comprometidos a ayudarte a realizar tu proyecto de remodelación o jardinería, desde grandes obras hasta pequeñas reparaciones. Echa un vistazo a nuestro inventario y mira todo lo que tenemos para ti. Si tienes alguna pregunta, no dudes en contactarnos.   
+                
+            </div>
+            <!-- datos personales -->
+            <div class="col">
+                <img src="inmoviliaria-02.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- SECCION MISION Y VISION -->
+    <div id="MisionVision" class="MisionVision">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <img class="imagen" src="mision.png" alt="">
+                <h1>
+                   “SER UNA EMPRESA LIDER EN EL MERCADO DE LA CONSTRUCCION”
+
+                </h1>
+                <p>
+                    <br><br>Promover empresarialmente la construcción y venta de viviendas a precios de acuerdo al mercado que permita mejorar la calidad de vida de nuestros clientes, mediante el desarrollo de proyectos eficientes y de calidad. 
+                </p>
+                
+            </div>
+            <!-- datos personales -->
+            <div class="col">
+                <img src="vision.png" alt="">
+                <h1>
+                    “TRABAJO ASUMIDO”, “TRABAJO CUMPLIDO”
+                </h1>
+                <p>
+                    <br><br>Cubrir la demanda de viviendas accesibles mediante la construcción de edificios de calidad en diferentes regiones del país, que generen mayores beneficios y satisfacción a nuestros clientes.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    
+    <a href="#nosotros" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100063533198213&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://youtube.com/@urcons9509?si=L9IAts7NWgocdd3K"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/urconseirl?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@inversiones_urcons_?_t=8gozW13EU1l&_r=1"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/qr/5ZCX73KMRBQ2I1"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
