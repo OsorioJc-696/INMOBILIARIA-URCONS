@@ -21,6 +21,7 @@ html{
     text-align: center;
     justify-content:space-between;
     display: flex;
+    position: relative;
 }
 .Contenedor-header header{
     max-width: auto;
