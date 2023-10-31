@@ -1,19 +1,149 @@
-
-
-
-.carrusel-container {
-    width: 300px; /* Ancho deseado del carrusel */
-    overflow: hidden; /* Oculta el contenido que excede el ancho */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans'; 
+    margin: 0;
+    padding: 0;
 }
 
-.carrusel-slide {
-    display: flex; /* Hace que los elementos internos se muestren en línea horizontalmente */
-    transition: transform 0.5s; /* Agrega una animación suave al cambio de diapositivas */
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
 }
 
-.carrusel-item {
-    width: 300px; /* Ancho de cada diapositiva */
+/* MENU */
+.Contenedor-header{  
+    background: #060606;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+    justify-content:space-between;
+    display: flex;
 }
+.Contenedor-header header{
+    max-width: auto;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;  
+}
+
+.Contenedor-header header ul{
+    display: flex;
+    list-style:none;
+}
+.Contenedor-header header ul li{
+    text-align: center;
+}
+
+.Contenedor-header header nav ul li a{
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.Contenedor-header header nav ul li a:hover{
+    color: #50D9FF;
+    font-weight: bold;
+}
+ .nav-responsive{
+    background-color: #50D9FF;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;    
+}
+.nav-responsive:hover{
+    background-color: #1CB698;
+    color: #fff;
+    transition: .5s;
+}
+
+    /* CARRUSEL */
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    .inmobiliaria{
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        background:image(url(fondo02.jpg));
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .carrusel {
+        display: flex;
+        align-items: center;
+        overflow-x:scroll;
+        width: 1300px; /* Ancho del carrusel, ajusta según tus necesidades */
+        height: 350px;
+        margin: 25px auto;
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0 0 30px #ccccccbc;
+    }
+    
+    .imagen {
+       
+        background-size:cover;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+
+    }
+    
+    .imagen:hover {
+        transform: scale(1.2);
+    }
+
+    img{
+        border-radius: 50px;
+        max-width: 100%;
+        max-height:auto;
+        object-fit:fill; /* Para ajustar la imagen al tamaño máximo sin distorsión */
+        margin:0 140px;
+        box-shadow: 0 0 30px #003cd4bc;
+    }
+   
+    button {
+        margin: 15px 12em;
+        cursor: pointer;
+        border: none;
+        background-color: #0329d5;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        
+    }
+    button:hover{
+        background-color: #1CB698;
+        color: #fff;
+        transition: .5s;
+        border: 2px solid #0329d5 ;
+
+    }
+
+     .inmobiliaria h2{
+        font-size: 3rem;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        margin: 15px   0;
+
+     }
+    
+    
+  
+
 
 
 /* SECCION RESPONSIVE */
@@ -49,6 +179,10 @@
     }
 }
 
+
+
+
+/* SECCION FOOTER */
 footer{
     display: flex;
      background-color: #21c798;

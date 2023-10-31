@@ -6,12 +6,12 @@
     <title>INVERSIONES URCONS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="iconox.png">
-    <link rel="stylesheet" href="styleBlog.css">
+    <link rel="stylesheet" href="styleInmobiliaria.css">
 
 </head>
 <body>
     <!-- NAVEGADOR -->
-    <section class="contenedor-header">
+    <section class="Contenedor-header">
         <header>
             <div id="nav-logo" class="logo">
                 <img src="logo-02.png" alt="">
@@ -52,6 +52,9 @@
                             <!-- Agrega más subpestañas si es necesario -->
                         </ul>
                     </li>
+                    <li>
+                        <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 12)">inmobiliaria</a></li>
+                    </li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -61,99 +64,69 @@
     </section>
 
     <!-- SECCION inmoviliaria-->
-    
-    <section id="inmoviliaria" class="inmoviliaria">
-        <div class="contenido-section">
-            <h2>Tabla de Información</h2>
-            
-            <div class="carrusel-container">
-                
-                    <div class="carrusel-slide">
-                        <!-- Diapositiva 1 -->
-                        <div class="carrusel-item">
-                            <img src="img01.jpeg" alt="Imagen 1">
-                        </div>
-                        <!-- Diapositiva 2 -->
-                        <div class="carrusel-item">
-                            <img src="img02.jpeg" alt="Imagen 2">
-                        </div>
-                        <!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img03.jpeg" alt="Imagen 3">
-                        </div>
-                        <!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img04.jpeg" alt="Imagen 3">
-                        </div>
-                        <!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img05.jpeg" alt="Imagen 3">
-                        </div>
-                        <!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img06.jpeg" alt="Imagen 3">
-                        </div>
-                        <!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img08.jpeg" alt="Imagen 3">
-                        </div>
-                        <!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img09.jpeg" alt="Imagen 3">
-                        </div><!-- Diapositiva 3 -->
-                        <div class="carrusel-item">
-                            <img src="img10.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img11.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img12.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img13.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img14.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img15.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img17.jpeg" alt="Imagen 3">
-                        </div>
-                        <div class="carrusel-item">
-                            <img src="img18.jpeg" alt="Imagen 3">
-                        </div>
-                    </div>
-
-
-               
-
-
-
-
+    <section class="inmobiliaria">
+        <h2>OFRECEMOS</h2>
+        <div class="carrusel" id="carrusel">
+            <div class="imagen imagen-activa" id="imagen1" onclick="mostrarImagen(1)">
+                <img src="img01.jpeg" alt="">
             </div>
-        
-            <div class="carrusel-buttons">
-                <span class="carrusel-button" onclick="mostrarImagen(-1)">Anterior</span>
-                <span class="carrusel-button" onclick="mostrarImagen(1)">Siguiente</span>
+            <div class="imagen" id="imagen2" onclick="mostrarImagen(2)">
+                <img src="img02.jpeg" alt="">
             </div>
+            <div class="imagen" id="imagen3" onclick="mostrarImagen(3)">
+                <img src="img03.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen4" onclick="mostrarImagen(4)">
+                <img src="img04.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen5" onclick="mostrarImagen(5)">
+                <img src="img05.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen11" onclick="mostrarImagen(5)">
+                <img src="img06.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen11" onclick="mostrarImagen(6)">
+                <img src="img07.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen8" onclick="mostrarImagen(7)">
+                <img src="img08.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen9" onclick="mostrarImagen(8)">
+                <img src="img09.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(9)">
+                <img src="img10.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(10)">
+                <img src="img11.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(11)">
+                <img src="img12.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(12)">
+                <img src="img13.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(13)">
+                <img src="img14.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(14)">
+                <img src="img15.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(15)">
+                <img src="img17.jpeg" alt="">
+            </div>
+            <div class="imagen" id="imagen10" onclick="mostrarImagen(16)">
+                <img src="img18.jpeg" alt="">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
         </div>
-       
-      
+        
     </section>
-
-
+    
+    
     <!-- footer -->
 <footer>
-    <!-- <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-        
-    </div> -->
+   
     <a href="#blog" class="arriba">
         <i class="fa-solid fa-angles-up"></i>
     </a>
@@ -166,6 +139,8 @@
 
     </div>
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>

@@ -303,25 +303,6 @@ function enviarSMS() {
   document.getElementById('popup').style.display = 'block';
 }
 
+
 // CARRUSEL
-let slideIndex = 1;
-        mostrarSlide(slideIndex);
 
-        function cambiarSlide(n) {
-            mostrarSlide(slideIndex += n);
-        }
-
-        function mostrarSlide(n) {
-            const slides = document.querySelectorAll('.carrusel-item');
-            
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            
-            // Calcula la transformación necesaria para mostrar la diapositiva actual
-            const translateXValue = -(slideIndex - 1) * 300; // 300 es el ancho de cada diapositiva
-            document.querySelector('.carrusel-slide').style.transform = `translateX(${translateXValue}px)`;
-        }
