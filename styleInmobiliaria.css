@@ -66,7 +66,6 @@ html{
     /* CARRUSEL */
     body {
         text-align: center;
-        font-family: Arial, sans-serif;
     }
     .inmobiliaria{
         margin: 0 0 0 0;
@@ -80,7 +79,7 @@ html{
         align-items: center;
         padding: 30px 0;
     }
-    .carrusel {
+    .inmobiliaria .carrusel {
         display: flex;
         align-items: center;
         overflow-x:scroll;
@@ -92,7 +91,7 @@ html{
         box-shadow: 0 0 30px #ccccccbc;
     }
     
-    .imagen {
+    .inmobiliaria .imagen {
        
         background-size:cover;
         transition: transform 0.5s ease;
@@ -100,11 +99,11 @@ html{
 
     }
     
-    .imagen:hover {
+    .inmobiliaria .imagen:hover {
         transform: scale(1.2);
     }
 
-    img{
+    .inmobiliaria img{
         border-radius: 50px;
         max-width: 100%;
         max-height:auto;
@@ -113,7 +112,7 @@ html{
         box-shadow: 0 0 30px #003cd4bc;
     }
    
-    button {
+    .inmobiliaria button {
         margin: 15px 12em;
         cursor: pointer;
         border: none;
@@ -124,7 +123,7 @@ html{
         font-size: 16px;
         
     }
-    button:hover{
+   .inmobiliaria button:hover{
         background-color: #1CB698;
         color: #fff;
         transition: .5s;
