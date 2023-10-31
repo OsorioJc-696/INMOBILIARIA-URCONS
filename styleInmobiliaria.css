@@ -78,6 +78,7 @@ html{
         justify-content: center;
         align-items: center;
         padding: 30px 0;
+        position: relative;
     }
     .inmobiliaria .carrusel {
         display: flex;
@@ -175,6 +176,17 @@ html{
     nav.responsive ul li a{
         
         font-size: 12px;
+    }
+    .inmobiliaria .carrusel {
+        width: 750px; /* Ancho del carrusel, ajusta según tus necesidades */
+        
+    }
+}
+@media screen and (max-width:700px) {
+       
+    .inmobiliaria .carrusel {
+        width: 450px; /* Ancho del carrusel, ajusta según tus necesidades */
+        
     }
 }
 
