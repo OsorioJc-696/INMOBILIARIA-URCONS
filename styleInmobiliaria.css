@@ -90,10 +90,13 @@ html{
         overflow-x:scroll;
         width: 1300px; /* Ancho del carrusel, ajusta según tus necesidades */
         height: 350px;
-        margin: 25px auto;
+        margin: 25px auto 55px auto;
         border-radius: 5px;
         padding: 10px;
         box-shadow: 0 0 30px #ccccccbc;
+    }
+    .noticia .informacion  .imgNoticia {
+        
     }
     
     .inmobiliaria .imagen {
@@ -116,7 +119,10 @@ html{
         margin:0 140px;
         box-shadow: 0 0 30px #003cd4bc;
     }
-   
+    .inmobiliaria a{
+        text-decoration: none;
+        font-size:25px ;
+    }
     .inmobiliaria button {
         margin: 15px 12em;
         cursor: pointer;
@@ -147,12 +153,35 @@ html{
 
 .Proyectos{
     background: linear-gradient(to right, #0329d5, #1CB698);
-    padding: 140px 0;
+    padding: 140px 0 35px 0;
+}
+
+.Proyectos button{
+    padding: 14px 05PX;
+    border-radius: 50PX;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+.Proyectos button:hover{
+    border: 2px solid #0a1128;
+    box-shadow: #05c1ae;
+
 }
 .Proyectos .Residencia .residencial{
     padding: 35px 0;
     border: 1px solid #0a1128;
+    border-radius: 15px;
     margin: 1em 5em;
+}
+.Proyectos .Residencia {
+    margin-bottom: 1px;
+}
+.Proyectos .Residencia h1{
+    padding: 25px 5px 0;
+    font-size:48px ;
+}
+.Proyectos .Residencia h2{
+    padding-bottom: 25px;
 }
 .proyecto{
     
@@ -176,6 +205,38 @@ html{
 .proyecto .informacion img {
     border-radius: 5px;
 }
+.noticia{
+    
+    background: linear-gradient(to left, rgba(30,35,38,.8), rgba(10, 23, 199, 0.412)),
+    url(fondo03.jpg);
+    background-size: cover;
+    padding: 140px 0 40px 0;
+    width: 100%;
+    position: relative;
+}
+.noticia .informacion h1{
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+.noticia .informacion h2{
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: #0a1128;
+
+}
+
+.noticia .informacion  img {
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.noticia .informacion  .imgNoticia {
+    margin-bottom: 35px;
+}
+.noticia a{
+    text-decoration: none;
+    font-size:25px ;
+}
+
 .proyecto .boton01 .botonRegresar{
     position: fixed;
     top:130px;
@@ -277,12 +338,12 @@ html{
         font-size: 12px;
         
     }
-    
+
     .inmobiliaria .carrusel {
-        width: 750px; /* Ancho del carrusel, ajusta según tus necesidades */
-        
+        width: 780px; /* Ancho del carrusel, ajusta según tus necesidades */ 
     }
 }
+
 @media screen and (max-width:700px) {
        
     .inmobiliaria .carrusel {

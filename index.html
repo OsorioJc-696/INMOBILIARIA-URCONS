@@ -12,12 +12,14 @@
 
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
+    <!-- NAVEGADOR -->
+    <!-- NAVEGADOR -->
     <section class="contenedor-header">
         <header>
             <div id="nav-logo" class="logo">
                 <img src="logo-02.png" alt="">
             </div>
+
             <nav id="nav">
                 <ul>
                     <li>
@@ -25,7 +27,7 @@
                         <ul class="subpestañas" id="subpestañas1" style="display: none">
                             <li><a href="index.html#portada" onclick="seleccionarSubpestaña(1, 1)">Portada</a></li>
                             <li><a href="index.html#inicio" onclick="seleccionarSubpestaña(1, 2)">Urcons</a></li>
-                            <li><a href="index.html#contactos" onclick="seleccionarSubpestaña(1, 3)">Contáctame</a></li>
+                            <li><a href="index.html#contacto" onclick="seleccionarSubpestaña(1, 3)">Contáctame</a></li>
                             <!-- Agrega más subpestañas si es necesario -->
                         </ul>
                     </li>
@@ -49,20 +51,25 @@
                         <a href="#" onclick="mostrarSubpestañas(4, this)">MÁS <i class="fas fa-chevron-down"></i></a>
                         <ul class="subpestañas" id="subpestañas4" style="display: none">
                             <li><a href="verMas.html#historial" onclick="seleccionarSubpestaña(4, 9)">Historial Crediticio</a></li>
-                            <li><a href="verMas.html#aval" onclick="seleccionarSubpestaña(4, 10)">Aval hipotecario</a></li>
-                            <li><a href="verMas.html#tienda" onclick="seleccionarSubpestaña(4, 11)">Garante hipotecario</a></li>
+                            <li><a href="verMas.html#aval" onclick="seleccionarSubpestaña(4, 10)">Aval Hipotecario</a></li>
+                            <li><a href="verMas.html#tienda" onclick="seleccionarSubpestaña(4, 11)">Crédito MIvivienda</a></li>
                             <!-- Agrega más subpestañas si es necesario -->
                         </ul>
                     </li>
                     <li>
-                        <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 12)">inmobiliaria</a></li>
+                        <a href="#" onclick="mostrarSubpestañas(5, this)">OFRECEMOS <i class="fas fa-chevron-down"></i></a>  
+                        <ul class="subpestañas" id="subpestañas5" style="display: none">
+                            <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 12)">Proyectos</a></li>
+                            <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 13)">Venta/Pre-venta</a></li>
+                        </ul> 
+                        
                     </li>
                 </ul>
             </nav>
-
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
         </header>
     </section>
 
