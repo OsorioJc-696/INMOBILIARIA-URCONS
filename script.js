@@ -1,14 +1,17 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-        
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true
-    }
+let pestañas = document.querySelectorAll('.pestaña');
+
+function mostrarOcultarMenu() {
+  if (menuVisible) {
+    // Oculta todas las subpestañas al ocultar el menú
+    ocultarTodasSubpestañas();
+    document.getElementById("nav").classList = "";
+    menuVisible = false;
+  } else {
+    document.getElementById("nav").classList = "responsive";
+    menuVisible = true;
+
+  }
 }
 
 // CHAT BOT
@@ -148,160 +151,7 @@ function ocultarTodasSubpestañas() {
   }
 }
 
-
-
-
-// Llama a la función para ocultar todas las subpestañas al cargar la página
-ocultarTodasSubpestañas();
-
-// Al cargar la página, obtén la última subpestaña visible desde la cookie
-window.onload = function() {
-    var ultimaSubpestaña = obtenerCookie("ultimaSubpestañaVisible");
-    if (ultimaSubpestaña) {
-        mostrarSubpestañas(ultimaSubpestaña);
-    }
-};
-
-
-
-//CREACION DE PARTICULAS
-particlesJS('particles-js', {
-    "particles": {
-      "number": {
-        "value": 150, // Aumentamos la cantidad de partículas
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": ["#ff0000", "#00ff00", "#5B000E", "#ffff00", "#ff00ff", "#00ffff","#ffffff"], // Define un array de colores
-        "random": true, // Hacemos que los colores sean aleatorios dentro del array
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        }
-      },
-      "opacity": {
-        "value": 0.7, // Aumentamos la opacidad de las partículas
-        "random": true, // Hacemos que la opacidad sea aleatoria
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 5, // Reducimos el tamaño de las partículas
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 80,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#9EBF13",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 4, // Aumentamos la velocidad de movimiento
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 200, // Aumentamos la distancia para agarrar partículas
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 100, // Aumentamos la distancia de repulsión
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  });
-
-
-//FORMULARIO DE CONTACTO
-function enviarSMS() {
-  // Tu lógica para enviar el SMS
-
-  // Muestra la ventana emergente de agradecimiento
-  document.getElementById('popup').style.display = 'block';
-}
-
-function cerrarPopup() {
-  // Cierra la ventana emergente de agradecimiento
-  document.getElementById('popup').style.display = 'none';
-}
-
-function enviarSMS() {
-  // Realiza aquí las acciones necesarias para enviar el SMS
-
-  // Limpia los campos del formulario
-  document.getElementById("nombre").value = "";
-  document.getElementById("telefono").value = "";
-  document.getElementById("mensaje").value = "";
-
-  // Puedes mostrar una ventana emergente de agradecimiento aquí si lo deseas
-  document.getElementById('popup').style.display = 'block';
-}
+// RESPONSIVE
 
 
 // CARRUSEL

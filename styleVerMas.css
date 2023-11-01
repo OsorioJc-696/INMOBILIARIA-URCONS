@@ -51,7 +51,7 @@ html{
     font-weight: bold;
 }
 .nav-responsive{
-    background-color: #50D9FF;
+    background-color: #0329d5;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -66,7 +66,6 @@ html{
 .columna span{
     font-weight: bold;
 }
-
 /* BOTON */
 
 
@@ -162,39 +161,32 @@ html{
     nav.responsive{
         display: block;
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 75px;
-        background-color: #00000072;
+        background-color: #0329d5ad;
         width: 180px;
+        border-radius: 5px;
     }
     nav.responsive ul{
         display: block !important;
+        
     }
     nav.responsive ul li{
         text-align: center;
-        padding: 10px 0;
+        margin-top: 2px;
+        padding: 1px;
     }
     nav.responsive ul li ul li a{
         border-bottom: 1px solid #05c1ae;
         
+        color:black;
+        font-weight: bold;
     }
     nav.responsive ul li a{
-        
         font-size: 12px;
+        
     }
-    .verMas .columnas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas */
-        width: 100%; /* Establece el ancho máximo de cada columna al 100% */
-    }
-    .verMas .columnas2 {
-        grid-template-columns: repeat(1, 1fr); /* Crea 3 columnas */
-       
-    }
-    .verMas img {
-       margin-left: 10%;
-       
-    }
+    
 }
 
 @media screen and (max-width:700px) {

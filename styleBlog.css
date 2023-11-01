@@ -51,7 +51,7 @@ html{
     font-weight: bold;
 }
 .nav-responsive{
-    background-color: #50D9FF;
+    background-color: #0329d5;
     color:#fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -147,46 +147,33 @@ html{
     nav.responsive{
         display: block;
         position: absolute;
-        right: 0;
+        right: 10px;
         top: 75px;
-        background-color: #00000072;
+        background-color: #0329d5ad;
         width: 180px;
+        border-radius: 5px;
     }
     nav.responsive ul{
         display: block !important;
+        
     }
     nav.responsive ul li{
         text-align: center;
-        padding: 10px 0;
+        margin-top: 2px;
+        padding: 1px;
     }
     nav.responsive ul li ul li a{
         border-bottom: 1px solid #05c1ae;
         
+        color:black;
+        font-weight: bold;
     }
     nav.responsive ul li a{
-        
         font-size: 12px;
-    }
-
-    .blog .columnas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    }
-    .blog .columna {
-        width: 100%;
-        float: left;
-    }
-    .blog .columna img {
-        
-        margin: 15px 0 ;
         
     }
     
 }
-
 
 @media screen and (max-width:700px) {
     .blog .columna {

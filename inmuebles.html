@@ -16,6 +16,7 @@
             <div id="nav-logo" class="logo">
                 <img src="logo-02.png" alt="">
             </div>
+
             <nav id="nav">
                 <ul>
                     <li>
@@ -53,13 +54,18 @@
                         </ul>
                     </li>
                     <li>
-                        <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 12)">inmobiliaria</a></li>
+                        <a href="#" onclick="mostrarSubpestañas(5, this)">MENOS <i class="fas fa-chevron-down"></i></a>  
+                        <ul>
+                            <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 12)">inmobiliaria</a></li>
+                        </ul> 
+                        
                     </li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
         </header>
     </section>
 
