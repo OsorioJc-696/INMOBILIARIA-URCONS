@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVERSIONES URCONS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="iconox.png">
+    <link rel="stylesheet" href="styleInmobiliaria.css">
+
+</head>
+<body>
+    <!-- NAVEGADOR -->
+    <section class="Contenedor-header">
+        <header>
+            <div id="nav-logo" class="logo">
+                <img src="logo-02.png" alt="">
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(1, this)">INICIO <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas1" style="display: none">
+                            <li><a href="index.html#portada" onclick="seleccionarSubpestaña(1, 1)">Portada</a></li>
+                            <li><a href="index.html#inicio" onclick="seleccionarSubpestaña(1, 2)">Urcons</a></li>
+                            <li><a href="index.html#contacto" onclick="seleccionarSubpestaña(1, 3)">Contáctame</a></li>
+                            <!-- Agrega más subpestañas si es necesario -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(2, this)">NOSOTROS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas2" style="display: none">
+                            <li><a href="nosotros.html#nosotros" onclick="seleccionarSubpestaña(2, 4)">Extra</a></li>
+                            <li><a href="nosotros.html#MisionVision" onclick="seleccionarSubpestaña(2, 5)">Misión / Visión</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(3, this)">BLOG <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas3" style="display: none">
+                            <li><a href="blog.html#historial" onclick="seleccionarSubpestaña(3, 6)">Historial Crediticio</a></li>
+                            <li><a href="blog.html#aval" onclick="seleccionarSubpestaña(3, 7)">Aval Hipotecario</a></li>
+                            <li><a href="blog.html#tienda" onclick="seleccionarSubpestaña(3, 8)">Crédito MIvivienda</a></li>
+                            <!-- Agrega más subpestañas si es necesario -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(4, this)">MÁS <i class="fas fa-chevron-down"></i></a>
+                        <ul class="subpestañas" id="subpestañas4" style="display: none">
+                            <li><a href="verMas.html#historial" onclick="seleccionarSubpestaña(4, 9)">Historial Crediticio</a></li>
+                            <li><a href="verMas.html#aval" onclick="seleccionarSubpestaña(4, 10)">Aval Hipotecario</a></li>
+                            <li><a href="verMas.html#tienda" onclick="seleccionarSubpestaña(4, 11)">Crédito MIvivienda</a></li>
+                            <!-- Agrega más subpestañas si es necesario -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" onclick="mostrarSubpestañas(5, this)">MENOS <i class="fas fa-chevron-down"></i></a>  
+                        <ul>
+                            <li><a href="inmuebles.html" onclick="seleccionarSubpestaña(5, 12)">inmobiliaria</a></li>
+                        </ul> 
+                        
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </section>
+
+    <!-- SECCION PROYECTOS Y VENTA-PREVENTA -->
+    <section class="proyecto" id="proyecto">
+        <div class="informacion">
+            <h1>PROYECTO </h1>
+            <h2>RESIDENCIA LORETO I</h2>
+            
+            <div class="LoretoI">
+                <img src="loretoI-o0x.jpg" alt="imagen loreto I"><br>
+                <img src="" alt="">
+            </div>
+            <div>
+                <img src="loretoI-o1.jpeg" alt="">
+                <img src="loretoI-o2.jpeg" alt="">
+                <img src="loretoI-o3.jpeg" alt="">
+                <img src="loretoI-o4.jpg" alt="">
+                <img src="loretoI-o5.jpeg" alt="">
+            </div>
+
+            <div class="boton01">
+                <button class="botonRegresar">
+                    Regresar
+                </button>
+            </div>
+            <div class="boton02">
+                <button class="botonnavegar">
+                    <a href="venecia.html">
+                        <i class="fas fa-arrow-circle-left"></i>
+                    </a>
+                    
+                </button>
+                <button class="botonnavegar">
+                    <a href="loretoII.html">
+                        <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                    
+            </button>
+
+            </div>          
+        </div>
+    </section>
+
+    
+    
+    <!-- footer -->
+<footer>
+   
+    <a href="#inmobiliaria" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.facebook.com/profile.php?id=100063533198213&mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://youtube.com/@urcons9509?si=L9IAts7NWgocdd3K"><i class="fab fa-youtube"></i></a>
+        <a href="https://instagram.com/urconseirl?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@inversiones_urcons_?_t=8gozW13EU1l&_r=1"><i class="fab fa-tiktok"></i></a>
+        <a href="https://wa.me/qr/5ZCX73KMRBQ2I1"><i class="fab fa-whatsapp"></i></a>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

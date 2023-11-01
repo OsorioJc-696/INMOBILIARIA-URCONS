@@ -146,14 +146,72 @@ html{
      }
 
 .Proyectos{
-    background-color: #0329d5;
+    background: linear-gradient(to right, #0329d5, #1CB698);
     padding: 140px 0;
 }
 .Proyectos .Residencia .residencial{
     padding: 35px 0;
-    border: 1px solid #fff;
+    border: 1px solid #0a1128;
     margin: 1em 5em;
 }
+.proyecto{
+    
+    background: linear-gradient(to left, rgba(30,35,38,.8), rgba(10, 23, 199, 0.412)),
+    url(fondo03.jpg);
+    background-size: cover;
+    padding: 140px 0 40px 0;
+}
+.proyecto .informacion h1{
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+.proyecto .informacion h2{
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: #0a1128;
+}
+
+.proyecto .boton01 .botonRegresar{
+    position: fixed;
+    top:130px;
+    left:30px;
+    padding: 10px;
+    color: #000;
+    background-color: #05c1ae;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family:'Work Sans';
+}
+.proyecto .boton02 .botonnavegar {
+    
+    padding: 0.5em;
+    margin: 25px 16em;
+    border: 2px solid #08239fd7;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family:'Work Sans';
+    background-color: #21c798;
+}
+
+.proyecto .boton02 .botonnavegar:hover {
+    border: 2px solid #089f9fd7;
+    color: #000;
+    background-color: #ffffff00;
+    font-weight: bold;
+    transition: .5s;
+
+}
+.proyecto .boton02 .botonnavegar i {
+    color:#0329d5;
+}
+.proyecto .boton01 .botonRegresar:hover{
+    color: #000;
+    background-color: #08239fd7;
+    font-weight: bold;
+    transition: .6s;
+}
+
 
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
