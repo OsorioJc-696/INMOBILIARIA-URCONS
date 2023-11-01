@@ -160,6 +160,8 @@ html{
     url(fondo03.jpg);
     background-size: cover;
     padding: 140px 0 40px 0;
+    width: 100%;
+    position: relative;
 }
 .proyecto .informacion h1{
     margin-bottom: 20px;
@@ -171,6 +173,9 @@ html{
     color: #0a1128;
 }
 
+.proyecto .informacion img {
+    border-radius: 5px;
+}
 .proyecto .boton01 .botonRegresar{
     position: fixed;
     top:130px;
@@ -182,10 +187,23 @@ html{
     font-size: 20px;
     font-family:'Work Sans';
 }
-.proyecto .boton02 .botonnavegar {
+.proyecto .boton01 .botonRegresar:hover{
+   
+    background-color: #08239fd7;
+    font-weight: bold;
+    transition: .6s;
+}
+.proyecto .boton01 .botonRegresar a{
+    color: #000;
+    text-decoration: none;
+}
+.proyecto .boton02{
+    position: relative;
+    width: 100%;
+}
+.proyecto .boton02 .botonnavegar1, .botonnavegar2 {
     
     padding: 0.5em;
-    margin: 25px 16em;
     border: 2px solid #08239fd7;
     color: #000;
     border-radius: 50px;
@@ -194,23 +212,33 @@ html{
     background-color: #21c798;
 }
 
-.proyecto .boton02 .botonnavegar:hover {
+.proyecto .boton02 .botonnavegar1 {
+    margin: 25px 55px 0 0;
+    
+}
+.proyecto .boton02 .botonnavegar2 {
+    margin: 25px 0 0 55px;
+    
+}
+
+.proyecto .boton02 .botonnavegar1:hover {
     border: 2px solid #089f9fd7;
     color: #000;
-    background-color: #ffffff00;
+    background-color: #fff;
     font-weight: bold;
     transition: .5s;
-
+}
+.proyecto .boton02 .botonnavegar2:hover {
+    border: 2px solid #089f9fd7;
+    color: #000;
+    background-color: #fff;
+    font-weight: bold;
+    transition: .5s;
 }
 .proyecto .boton02 .botonnavegar i {
     color:#0329d5;
 }
-.proyecto .boton01 .botonRegresar:hover{
-    color: #000;
-    background-color: #08239fd7;
-    font-weight: bold;
-    transition: .6s;
-}
+
 
 
 /* SECCION RESPONSIVE */
@@ -258,8 +286,12 @@ html{
 @media screen and (max-width:700px) {
        
     .inmobiliaria .carrusel {
-        width: 450px; /* Ancho del carrusel, ajusta según tus necesidades */
-        
+        width: 450px; /* Ancho del carrusel, ajusta según tus necesidades */ 
+    }
+    
+    
+    footer{
+        width: 700px;
     }
 }
 
