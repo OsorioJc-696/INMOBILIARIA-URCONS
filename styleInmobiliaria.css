@@ -145,6 +145,16 @@ html{
 
      }
 
+.Proyectos{
+    background-color: #0329d5;
+    padding: 140px 0;
+}
+.Proyectos .Residencia .residencial{
+    padding: 35px 0;
+    border: 1px solid #fff;
+    margin: 1em 5em;
+}
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{
